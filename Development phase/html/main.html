@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Main</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bookmarks</h1>
+        <hr>
+    </header>
+    <main>
+        <form action="add/sort">
+            <button type="button"> add Bookmark </button>
+            <label for="stars">Sort by stars:</label>
+            <select id="stars" name="stars">
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select>
+        </form>
+        <hr>
+
+
+        <div class="flexbox">
+            <div class="title">
+                <h2>Title 1</h2>
+                <p># stars</p>
+            </div>
+
+            <form action="details">
+                <button type="button">Details</button>
+            </form>
+        </div>
+        <hr>
+    </main>
+
+
+</body>
+
+</html>
