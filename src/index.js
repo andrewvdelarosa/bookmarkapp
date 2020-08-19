@@ -1,7 +1,5 @@
 import $ from 'jquery';
-
-import 'normalize.css';
-import './index.css';
+import './style.css';
 
 function main() {
   console.log('DOM is loaded');
@@ -9,5 +7,7 @@ function main() {
   const startMsg = $('<p>Webpack is working!</p>');
   $('#root').append(startMsg);
 }
+
+
 
 $(main);
