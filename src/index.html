@@ -12,18 +12,8 @@
 
 <script>
 
-// event listeners for add bookmark form
-  $(document).ready(function () {
-    $(".add").click(function () {
-      $("#form1").slideToggle("slow");
-    });
-  });
-// slide up close button for adding book
-  $(document).ready(function () {
-    $(".close").click(function () {
-      $("#form1").slideToggle("slow");
-    });
-  });
+
+
 
   // event listener for sliding details
   $(document).ready(function () {
@@ -89,7 +79,9 @@
     </form>
 
     <!-- the bookmark main -->
-    <div class = "js-bookmark-list">
+    <ul class = "js-bookmark-list">
+    
+    </ul>
     <!-- <div class="flexbox">
       <div class="title">
         <h2>Title 1</h2>
