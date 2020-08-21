@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Bookmark App</title>
+  <title>Bookmark App</title>
 </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+// event listeners for add bookmark form
+  $(document).ready(function () {
+    $(".add").click(function () {
+      $("#form1").slideToggle("slow");
+    });
+  });
+// slide up close button for adding book
+  $(document).ready(function () {
+    $(".close").click(function () {
+      $("#form1").slideToggle("slow");
+    });
+  });
+
+  // event listener for sliding details
+  $(document).ready(function () {
+    $("#details").click(function () {
+      $("#overflow").slideToggle("slow");
+    });
+  });
+
+  
+
+
+
+
+
+</script>
 
 <header>
   <h1>Bookmarks</h1>
@@ -14,6 +46,86 @@
 </header>
 
 <body>
+
+  <main>
+    <!-- header bar -->
+    <div class="addbookmark">
+      <form action="addsort">
+        <button type="button" class="add"> add Bookmark </button>
+        <label for="stars">Sort by stars:</label>
+        <select id="stars" name="stars">
+          <option value="1">1 star</option>
+          <option value="2">2 stars</option>
+          <option value="3">3 stars</option>
+          <option value="4">4 stars</option>
+          <option value="5">5 stars</option>
+        </select>
+      </form>
+    </div>
+    <hr>
+
+    <!-- slide out form for adding -->
+    <form id="form1">
+      <label for="title">Title:</label>
+      <input class ="js-bookmark-title"type="text" name="title">
+
+      <label for="starrating">Star rating:</label>
+      <select name="starrating" class="js-bookmark-rating">
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option value="4">4 stars</option>
+        <option value="5">5 stars</option>
+      </select><br>
+
+      <label for="url">URL:</label>
+      <input class="js-bookmark-url" type="url" name="url"><br>
+
+      <label for="description">Description:</label>
+      <input class="js-bookmark-description"type="text" name="description"><br>
+
+      <button type="submit">Submit</button>
+      <button type="button" class="close">Close</button>
+    </form>
+
+    <!-- the bookmark main -->
+    <div class = "js-bookmark-list">
+    <!-- <div class="flexbox">
+      <div class="title">
+        <h2>Title 1</h2>
+        <p># stars</p>
+      </div>
+      <button type="button">Launch</button>
+
+      <form action="details" id="details">
+        <button type="button">Details</button>
+      </form>
+    </div> -->
+  </div>
+  
+  
+
+    <!-- details overflow -->
+
+    
+
+    </div>
+
+    <!-- end of details overflow     -->
+
+
+    <!-- buttons to dete and edit  -->
+    <!-- <button type="button">Edit</button>
+    <button type="button">Delete</button>
+    <hr> -->
+
+
+
+
+
+  </main>
+
   <div id="root"></div>
 </body>
+
 </html>

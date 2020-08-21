@@ -1,1 +1,7 @@
-const items = [];
+const bookmarks = [];
+
+
+
+export default {
+    bookmarks,
+}

@@ -1,4 +1,4 @@
-import $ from 'jquery';
+'use strict';
 
-import store from './store';
-import api from './api';
+
+
